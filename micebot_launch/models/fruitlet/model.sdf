@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="fruitlet">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+
+      <!-- Collision -->
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://fruitlet/meshes/model.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <!-- Visual -->
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://fruitlet/meshes/model.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://fruitlet/materials/textures</uri>
+            <name>fruitlet/fruitlet</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
